@@ -182,8 +182,8 @@
     </distributionManagement>
       
     <scm>
-        <connection>scm:svn:https://guest@svn.jenkins-ci.org/trunk/hudson/plugins/instant-messaging-parent</connection>
-        <developerConnection>scm:svn:https://svn.jenkins-ci.org/trunk/hudson/plugins/instant-messaging-parent</developerConnection>
+        <connection>scm:git:github.com:jenkinsci/instant-messaging-parent-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/instant-messaging-parent-plugin.git</developerConnection>
         <url>http://fisheye.jenkins-ci.org/browse/Jenkins/trunk/hudson/plugins/instant-messaging-parent</url>
     </scm>
 </project>
