@@ -9,7 +9,7 @@
 
 	<artifactId>instant-messaging-parent</artifactId>
 	<name>Parent project for all instant-messaging plugins</name>
-	<version>1.16-SNAPSHOT</version>
+	<version>1.16</version>
 	<packaging>pom</packaging>
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/Instant+Messaging+Plugin</url>
 	<developers>
