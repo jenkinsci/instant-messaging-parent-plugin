@@ -137,9 +137,13 @@
                 	<version>2.4.1</version>
                 </plugin>
                 <plugin>
-                	<artifactId>maven-compiler-plugin</artifactId>
-                	<version>2.3.2</version>
-                </plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.3.2</version>
+                    <configuration>
+                      <source>1.6</source>
+                      <target>1.5</target>
+                    </configuration>
+                  </plugin>
                 <plugin>
                 	<artifactId>maven-deploy-plugin</artifactId>
                 	<version>2.5</version>
@@ -163,6 +167,119 @@
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.9</version>
+                </plugin>
+                <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.apache.maven.plugins
+                                        </groupId>
+                                        <artifactId>
+                                            maven-enforcer-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [1.0.1,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>display-info</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.codehaus.groovy.maven
+                                        </groupId>
+                                        <artifactId>
+                                            gmaven-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [1.0-rc-5,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>
+                                                generateTestStubs
+                                            </goal>
+                                            <goal>testCompile</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.jenkins-ci.tools
+                                        </groupId>
+                                        <artifactId>
+                                            maven-hpi-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [1.71,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>apt-compile</goal>
+                                            <goal>insert-test</goal>
+                                            <goal>
+                                                resolve-test-dependencies
+                                            </goal>
+                                            <goal>test-hpl</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <execute/>
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.jvnet.localizer
+                                        </groupId>
+                                        <artifactId>
+                                            maven-localizer-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [1.13,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>generate</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <execute/>
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.kohsuke</groupId>
+                                        <artifactId>
+                                            access-modifier-checker
+                                        </artifactId>
+                                        <versionRange>
+                                            [1.0,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>enforce</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
