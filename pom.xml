@@ -9,7 +9,7 @@
     <groupId>org.jvnet.hudson.plugins</groupId>
 	<artifactId>instant-messaging-parent</artifactId>
 	<name>Parent project for all instant-messaging plugins</name>
-	<version>1.21</version>
+	<version>1.22-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/Instant+Messaging+Plugin</url>
 	<developers>
