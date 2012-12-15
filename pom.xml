@@ -9,7 +9,7 @@
     <groupId>org.jvnet.hudson.plugins</groupId>
 	<artifactId>instant-messaging-parent</artifactId>
 	<name>Parent project for all instant-messaging plugins</name>
-	<version>1.22</version>
+	<version>1.23-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/Instant+Messaging+Plugin</url>
 	<developers>
@@ -321,6 +321,6 @@
         <connection>scm:git:github.com:jenkinsci/instant-messaging-parent-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/instant-messaging-parent-plugin.git</developerConnection>
         <url>https://github.com/jenkinsci/instant-messaging-parent-plugin</url>
-      <tag>instant-messaging-parent-1.22</tag>
+      <tag>HEAD</tag>
   </scm>
 </project>
