@@ -102,7 +102,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>animal-sniffer-maven-plugin</artifactId>
                 <version>1.11</version>
-                <executions>
+                <!--<executions>
                     <execution>
                         <goals>
                             <goal>check</goal>
@@ -116,7 +116,7 @@
 							</signature>
                         </configuration>
                     </execution>
-                </executions>
+                </executions>-->
             </plugin>
             <plugin>
 		        <groupId>org.kohsuke.stapler</groupId>
